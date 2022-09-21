@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide",
+  "main": "Server-Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Server-Node.js",
+    "start-server": "node Server-Node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thngocph/nodejs-complete-guide.git"
+  },
+  "author": "Ngoc Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thngocph/nodejs-complete-guide/issues"
+  },
+  "homepage": "https://github.com/thngocph/nodejs-complete-guide#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
