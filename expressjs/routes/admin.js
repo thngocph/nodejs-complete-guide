@@ -1,12 +1,12 @@
 const path = require('path');
-
 const express = require('express');
-
 const router = express.Router();
+
+const rootDir = require('../util/path');
 
 router.get('/add-product', (req, res, next) => {
 	//res.send('<form action="add-product" method="POST"><input type="text" name="title"/><button type="submit">Add</button></form>');
-	res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'));
+	res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
 });
 
 // app.use: matches the starting of the request url
