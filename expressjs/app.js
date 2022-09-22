@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 	next(); // Allows the request to continue to the next middleware in line
 });
 
-app.use(adminRoutes);
+app.use('/admin', adminRoutes);
 
 app.use(shopRoutes);
 
