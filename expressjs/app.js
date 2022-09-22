@@ -11,6 +11,7 @@ const app = express();
 app.get('/favicon.ico', (req, res) => res.status(204));
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
 	console.log('In the middleware');
