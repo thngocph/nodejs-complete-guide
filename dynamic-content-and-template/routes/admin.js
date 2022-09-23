@@ -7,7 +7,8 @@ const rootDir = require('../util/path');
 const products = [];
 
 router.get('/add-product', (req, res, next) => {
-	res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+	// res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+	res.render('add-product', {pateTitle: 'Add Product'});
 });
 
 // app.use: matches the starting of the request url
