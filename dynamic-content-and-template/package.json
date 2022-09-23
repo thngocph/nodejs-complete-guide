@@ -4,7 +4,10 @@
   "description": "Working with Dynamic Content and Adding Templating Engines",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.6",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.14.11"

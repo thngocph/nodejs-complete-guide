@@ -7,6 +7,9 @@ const shopRoutes = require('./routes/shop');
 
 const app = express();
 
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 // app.get: matches the entire request url
 app.get('/favicon.ico', (req, res) => res.status(204));
 
