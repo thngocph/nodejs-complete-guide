@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require ('path');
 
-const adminRoutes = require('./routes/admin');
+const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
 const app = express();
@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 	next(); // Allows the request to continue to the next middleware in line
 });
 
-app.use('/admin', adminRoutes);
+app.use('/admin', adminData.routers);
 
 app.use(shopRoutes);
 
