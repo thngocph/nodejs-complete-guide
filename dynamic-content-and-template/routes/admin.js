@@ -8,7 +8,9 @@ const products = [];
 
 router.get('/add-product', (req, res, next) => {
 	// res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
-	res.render('add-product', {pageTitle: 'Add Product', path: 'add-product'});
+	res.render('add-product', {pageTitle: 'Add Product', path: 'add-product',
+							   formsCSS: true, productCSS: true, activeAddProduct: true
+							  });
 });
 
 // app.use: matches the starting of the request url
